@@ -190,6 +190,7 @@ Import-Package: javax.annotation;version=0.0.0,*
 				 <dependency>
     				<groupId>com.adobe.aemfd</groupId>
     				<artifactId>aemfd-client-sdk</artifactId>
+    				<version>6.0.122</version>
 				</dependency>
 				
 				<!-- OSGi Dependencies -->
@@ -323,6 +324,13 @@ Import-Package: javax.annotation;version=0.0.0,*
 					<groupId>mysql</groupId>
 					<artifactId>mysql-connector-java</artifactId>
 					<version>8.0.27</version>
+				</dependency>
+				<dependency>
+				    <groupId>DevelopingWithServiceUser</groupId>
+				    <artifactId>DevelopingWithServiceUser</artifactId>
+				    <version>1.0</version>
+				    <scope>system</scope>
+				    <systemPath>C:\Data\AEM\developingwithserviceuser\DevelopingWithServiceUser.jar</systemPath>
 				</dependency>				
 			</dependencies>			
 		</profile>
