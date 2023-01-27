@@ -40,8 +40,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Element;
 
-@Component(service = {Servlet.class}, property = {"sling.servlet.methods=post",
-		"sling.servlet.paths=/bin/assemblenewsletter"})
+@Component(service = {Servlet.class}, property = {"sling.servlet.methods=get","sling.servlet.methods=post",
+		"sling.servlet.paths=/bin/downloadnewsletters"})
 public class AssembleNewsLetters extends SlingAllMethodsServlet {
 	@Reference
 	AssemblerService assemblerService;
@@ -101,6 +101,7 @@ public class AssembleNewsLetters extends SlingAllMethodsServlet {
 		}
 	}
 
+	@Override
 	protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 		String[] newsletters = request.getParameter("selectedNewsLetters").split(",");
 		Session session = (Session) request.getResourceResolver().adaptTo(Session.class);
