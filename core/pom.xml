@@ -330,7 +330,7 @@ Import-Package: javax.annotation;version=0.0.0,*
 				    <artifactId>DevelopingWithServiceUser</artifactId>
 				    <version>1.0</version>
 				    <scope>system</scope>
-				    <systemPath>C:\Data\AEM\developingwithserviceuser\DevelopingWithServiceUser.jar</systemPath>
+				    <systemPath>C:\Data\AEM\libs\DevelopingWithServiceUser.jar</systemPath>
 				</dependency>				
 			</dependencies>			
 		</profile>
